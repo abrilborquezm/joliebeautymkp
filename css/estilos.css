@@ -1,0 +1,72 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  margin: 80px;
+  color: thistle;
+}
+
+.secciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transform: translate(10px, 20px);
+          transform: translate(10px, 20px);
+}
+
+.secciones .imagenes {
+  width: 60vh;
+  margin-top: 80px;
+}
+
+.productosDestacados {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(thistle));
+  background-image: linear-gradient(white, thistle);
+  color: black;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 70px;
+}
+
+
+
+/*Dispositivos chicos*/
+@media (max-width: 320px) {
+  .secciones {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .secciones .imagenes {
+    width: 40vh;
+    margin: 10px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
